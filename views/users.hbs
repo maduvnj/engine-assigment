@@ -1,0 +1,23 @@
+<main>
+    {{#if hasProducts }}
+    <div class="grid">
+        {{#each prods}}
+        <article class="card product-item">
+            <header class="card__header">
+                <h1 class="user__name">{{ this.title }}</h1>
+            </header>
+            <div class="card__image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Person_icon_BLACK-01.svg"
+                    alt="A user">
+            </div>
+                <p class="user6__description">A very interesting and smart</p>
+            <div class="card__content">
+            </div>
+            
+        </article>
+        {{/each}}
+    </div>
+    {{ else }}
+    <h1>No Users Found!</h1>
+    {{/if}}
+</main>
